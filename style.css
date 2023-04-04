@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+  height: 450px;
+  position: relative;
+}
+
+.greencircle {
+  left: 40%;
+  top: 40%;
+  background-color: green;
+  height: 150px;
+  width: 150px;
+  margin-left: 42%;
+  margin-top: 18%;
+  border-radius: 50%;
+  animation-name: beat;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+@keyframes beat {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(2);
+    }
+  }
